@@ -1,0 +1,13 @@
+(executable
+ (public_name aoc)
+ (name main)
+ (modules 
+   main
+   day2
+ )
+ (libraries aoc base stdio stdlib core)
+ (preprocess
+  (pps ppx_jane ppx_deriving.show ppx_sexp_conv)
+ )
+)
+
