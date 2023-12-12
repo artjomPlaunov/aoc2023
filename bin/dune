@@ -3,9 +3,10 @@
  (name main)
  (modules 
    main
+   day1
    day2
  )
- (libraries aoc base stdio stdlib core)
+ (libraries aoc base stdio stdlib core str)
  (preprocess
   (pps ppx_jane ppx_deriving.show ppx_sexp_conv)
  )
